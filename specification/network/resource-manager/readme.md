@@ -28,15 +28,62 @@ These are the global settings for the Network API.
 title: NetworkManagementClient
 description: Network Client
 openapi-type: arm
-tag: package-2019-06
+tag: package-328917932487120394712390841
 ```
 
 
+### Tag: package-328917932487120394712390841
+
+These settings apply only when `--tag=package-328917932487120394712390841` is specified on the command line.
+
+```yaml $(tag) == 'package-328917932487120394712390841'
+input-file:
+  - Microsoft.Network/stable/328917932487120394712390841/applicationGateway.json
+  - Microsoft.Network/stable/328917932487120394712390841/applicationSecurityGroup.json
+  - Microsoft.Network/stable/328917932487120394712390841/availableDelegations.json
+  - Microsoft.Network/stable/328917932487120394712390841/azureFirewall.json
+  - Microsoft.Network/stable/328917932487120394712390841/azureFirewallFqdnTag.json
+  - Microsoft.Network/stable/328917932487120394712390841/bastionHost.json
+  - Microsoft.Network/stable/328917932487120394712390841/checkDnsAvailability.json
+  - Microsoft.Network/stable/328917932487120394712390841/ddosCustomPolicy.json
+  - Microsoft.Network/stable/328917932487120394712390841/ddosProtectionPlan.json
+  - Microsoft.Network/stable/328917932487120394712390841/endpointService.json
+  - Microsoft.Network/stable/328917932487120394712390841/expressRouteCircuit.json
+  - Microsoft.Network/stable/328917932487120394712390841/expressRouteCrossConnection.json
+  - Microsoft.Network/stable/328917932487120394712390841/expressRouteGateway.json
+  - Microsoft.Network/stable/328917932487120394712390841/expressRoutePort.json
+  - Microsoft.Network/stable/328917932487120394712390841/firewallPolicy.json
+  - Microsoft.Network/stable/328917932487120394712390841/loadBalancer.json
+  - Microsoft.Network/stable/328917932487120394712390841/natGateway.json
+  - Microsoft.Network/stable/328917932487120394712390841/network.json
+  - Microsoft.Network/stable/328917932487120394712390841/networkInterface.json
+  - Microsoft.Network/stable/328917932487120394712390841/networkProfile.json
+  - Microsoft.Network/stable/328917932487120394712390841/networkSecurityGroup.json
+  - Microsoft.Network/stable/328917932487120394712390841/networkWatcher.json
+  - Microsoft.Network/stable/328917932487120394712390841/operation.json
+  - Microsoft.Network/stable/328917932487120394712390841/privateEndpoint.json
+  - Microsoft.Network/stable/328917932487120394712390841/privateLinkService.json
+  - Microsoft.Network/stable/328917932487120394712390841/publicIpAddress.json
+  - Microsoft.Network/stable/328917932487120394712390841/publicIpPrefix.json
+  - Microsoft.Network/stable/328917932487120394712390841/routeFilter.json
+  - Microsoft.Network/stable/328917932487120394712390841/routeTable.json
+  - Microsoft.Network/stable/328917932487120394712390841/serviceCommunity.json
+  - Microsoft.Network/stable/328917932487120394712390841/serviceEndpointPolicy.json
+  - Microsoft.Network/stable/328917932487120394712390841/serviceTags.json
+  - Microsoft.Network/stable/328917932487120394712390841/usage.json
+  - Microsoft.Network/stable/328917932487120394712390841/virtualNetwork.json
+  - Microsoft.Network/stable/328917932487120394712390841/virtualNetworkGateway.json
+  - Microsoft.Network/stable/328917932487120394712390841/virtualNetworkTap.json
+  - Microsoft.Network/stable/328917932487120394712390841/virtualWan.json
+  - Microsoft.Network/stable/328917932487120394712390841/vmssNetworkInterface.json
+  - Microsoft.Network/stable/328917932487120394712390841/vmssPublicIpAddress.json
+  - Microsoft.Network/stable/328917932487120394712390841/webapplicationfirewall.json
+```
 ### Tag: package-2019-06
 
 These settings apply only when `--tag=package-2019-06` is specified on the command line.
 
-```yaml $(tag) == 'package-2019-06'
+``` yaml $(tag) == 'package-2019-06'
 input-file:
   - Microsoft.Network/stable/2019-06-01/applicationGateway.json
   - Microsoft.Network/stable/2019-06-01/applicationSecurityGroup.json
@@ -79,6 +126,7 @@ input-file:
   - Microsoft.Network/stable/2019-06-01/vmssPublicIpAddress.json
   - Microsoft.Network/stable/2019-06-01/webapplicationfirewall.json
 ```
+
 ### Tag: package-2019-04
 
 These settings apply only when `--tag=package-2019-04` is specified on the command line.
@@ -1175,7 +1223,7 @@ See configuration in [readme.go.md](./readme.go.md)
 
 See configuration in [readme.java.md](./readme.java.md)
 
-## Multi-API/Profile support for AutoRest v3 generators 
+## Multi-API/Profile support for AutoRest v3 generators
 
 AutoRest V3 generators require the use of `--tag=all-api-versions` to select api files.
 
@@ -1715,11 +1763,10 @@ input-file:
 
 ```
 
-If there are files that should not be in the `all-api-versions` set, 
+If there are files that should not be in the `all-api-versions` set,
 uncomment the  `exclude-file` section below and add the file paths.
 
 ``` yaml $(tag) == 'all-api-versions'
 #exclude-file: 
 #  - $(this-folder)/Microsoft.Example/stable/2010-01-01/somefile.json
 ```
-
