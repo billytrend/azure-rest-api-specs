@@ -3,7 +3,7 @@
   "info": {
     "title": "VirtualWANAsAServiceManagementClient",
     "description": "REST API for Azure VirtualWAN As a Service.",
-    "version": "2019-06-01"
+    "version": "328917932487120394712390841"
   },
   "host": "management.azure.com",
   "schemes": [

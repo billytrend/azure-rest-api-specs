@@ -3,7 +3,7 @@
     "peeringName": "AzurePrivatePeering",
     "crossConnectionName": "<circuitServiceKey>",
     "resourceGroupName": "CrossConnection-SiliconValley",
-    "api-version": "2019-06-01",
+    "api-version": "328917932487120394712390841",
     "subscriptionId": "subid",
     "peeringParameters": {
       "properties": {

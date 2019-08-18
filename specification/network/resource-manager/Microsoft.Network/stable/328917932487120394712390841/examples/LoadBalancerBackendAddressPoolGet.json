@@ -4,7 +4,7 @@
     "resourceGroupName": "testrg",
     "loadBalancerName": "lb",
     "backendAddressPoolName": "backend",
-    "api-version": "2019-06-01"
+    "api-version": "328917932487120394712390841"
   },
   "responses": {
     "200": {

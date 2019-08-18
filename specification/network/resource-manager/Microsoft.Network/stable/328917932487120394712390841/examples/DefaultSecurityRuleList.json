@@ -1,7 +1,7 @@
 {
   "parameters": {
     "resourceGroupName": "testrg",
-    "api-version": "2019-06-01",
+    "api-version": "328917932487120394712390841",
     "subscriptionId": "subid",
     "networkSecurityGroupName": "nsg1"
   },

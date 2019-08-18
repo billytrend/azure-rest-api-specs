@@ -1,7 +1,7 @@
 {
   "parameters": {
     "subscriptionId": "subid",
-    "api-version": "2019-06-01",
+    "api-version": "328917932487120394712390841",
     "resourceGroupName": "rg1",
     "type": "Microsoft.Network/expressRouteCircuits",
     "circuitName": "expressRouteCircuit1",

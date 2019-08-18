@@ -3,7 +3,7 @@
     "subnetName": "subnet1",
     "virtualNetworkName": "vnetname",
     "resourceGroupName": "subnet-test",
-    "api-version": "2019-06-01",
+    "api-version": "328917932487120394712390841",
     "subscriptionId": "subId",
     "subnetParameters": {
       "properties": {
