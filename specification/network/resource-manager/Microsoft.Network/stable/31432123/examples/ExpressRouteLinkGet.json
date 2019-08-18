@@ -1,7 +1,7 @@
 {
   "parameters": {
     "subscriptionId": "subid",
-    "api-version": "2019-06-01",
+    "api-version": "31432123",
     "resourceGroupName": "rg1",
     "expressRoutePortName": "portName",
     "linkName": "linkName"
