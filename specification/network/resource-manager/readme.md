@@ -28,15 +28,62 @@ These are the global settings for the Network API.
 title: NetworkManagementClient
 description: Network Client
 openapi-type: arm
-tag: package-2019-06
+tag: package-31432123
 ```
 
 
+### Tag: package-31432123
+
+These settings apply only when `--tag=package-31432123` is specified on the command line.
+
+```yaml $(tag) == 'package-31432123'
+input-file:
+  - Microsoft.Network/stable/31432123/applicationGateway.json
+  - Microsoft.Network/stable/31432123/applicationSecurityGroup.json
+  - Microsoft.Network/stable/31432123/availableDelegations.json
+  - Microsoft.Network/stable/31432123/azureFirewall.json
+  - Microsoft.Network/stable/31432123/azureFirewallFqdnTag.json
+  - Microsoft.Network/stable/31432123/bastionHost.json
+  - Microsoft.Network/stable/31432123/checkDnsAvailability.json
+  - Microsoft.Network/stable/31432123/ddosCustomPolicy.json
+  - Microsoft.Network/stable/31432123/ddosProtectionPlan.json
+  - Microsoft.Network/stable/31432123/endpointService.json
+  - Microsoft.Network/stable/31432123/expressRouteCircuit.json
+  - Microsoft.Network/stable/31432123/expressRouteCrossConnection.json
+  - Microsoft.Network/stable/31432123/expressRouteGateway.json
+  - Microsoft.Network/stable/31432123/expressRoutePort.json
+  - Microsoft.Network/stable/31432123/firewallPolicy.json
+  - Microsoft.Network/stable/31432123/loadBalancer.json
+  - Microsoft.Network/stable/31432123/natGateway.json
+  - Microsoft.Network/stable/31432123/network.json
+  - Microsoft.Network/stable/31432123/networkInterface.json
+  - Microsoft.Network/stable/31432123/networkProfile.json
+  - Microsoft.Network/stable/31432123/networkSecurityGroup.json
+  - Microsoft.Network/stable/31432123/networkWatcher.json
+  - Microsoft.Network/stable/31432123/operation.json
+  - Microsoft.Network/stable/31432123/privateEndpoint.json
+  - Microsoft.Network/stable/31432123/privateLinkService.json
+  - Microsoft.Network/stable/31432123/publicIpAddress.json
+  - Microsoft.Network/stable/31432123/publicIpPrefix.json
+  - Microsoft.Network/stable/31432123/routeFilter.json
+  - Microsoft.Network/stable/31432123/routeTable.json
+  - Microsoft.Network/stable/31432123/serviceCommunity.json
+  - Microsoft.Network/stable/31432123/serviceEndpointPolicy.json
+  - Microsoft.Network/stable/31432123/serviceTags.json
+  - Microsoft.Network/stable/31432123/usage.json
+  - Microsoft.Network/stable/31432123/virtualNetwork.json
+  - Microsoft.Network/stable/31432123/virtualNetworkGateway.json
+  - Microsoft.Network/stable/31432123/virtualNetworkTap.json
+  - Microsoft.Network/stable/31432123/virtualWan.json
+  - Microsoft.Network/stable/31432123/vmssNetworkInterface.json
+  - Microsoft.Network/stable/31432123/vmssPublicIpAddress.json
+  - Microsoft.Network/stable/31432123/webapplicationfirewall.json
+```
 ### Tag: package-2019-06
 
 These settings apply only when `--tag=package-2019-06` is specified on the command line.
 
-```yaml $(tag) == 'package-2019-06'
+``` yaml $(tag) == 'package-2019-06'
 input-file:
   - Microsoft.Network/stable/2019-06-01/applicationGateway.json
   - Microsoft.Network/stable/2019-06-01/applicationSecurityGroup.json
@@ -79,6 +126,7 @@ input-file:
   - Microsoft.Network/stable/2019-06-01/vmssPublicIpAddress.json
   - Microsoft.Network/stable/2019-06-01/webapplicationfirewall.json
 ```
+
 ### Tag: package-2019-04
 
 These settings apply only when `--tag=package-2019-04` is specified on the command line.
@@ -1175,7 +1223,7 @@ See configuration in [readme.go.md](./readme.go.md)
 
 See configuration in [readme.java.md](./readme.java.md)
 
-## Multi-API/Profile support for AutoRest v3 generators 
+## Multi-API/Profile support for AutoRest v3 generators
 
 AutoRest V3 generators require the use of `--tag=all-api-versions` to select api files.
 
@@ -1715,11 +1763,10 @@ input-file:
 
 ```
 
-If there are files that should not be in the `all-api-versions` set, 
+If there are files that should not be in the `all-api-versions` set,
 uncomment the  `exclude-file` section below and add the file paths.
 
 ``` yaml $(tag) == 'all-api-versions'
 #exclude-file: 
 #  - $(this-folder)/Microsoft.Example/stable/2010-01-01/somefile.json
 ```
-
