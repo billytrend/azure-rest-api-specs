@@ -2,11 +2,10 @@
   "$schema": "https://openapistorageprod.blob.core.windows.net/sdkautomation/prod/schemas/specificationRepositoryConfiguration.schema.json",
   "sdkRepositoryMappings": {
     "azure-sdk-for-go": {
-      "mainBranch": "latest",
-      "integrationBranchPrefix": "sdkAutomationProdTest",
-      "generationRepository": "test-repo-billy/azure-sdk-for-go",
-      "integrationRepository": "test-repo-billy/azure-sdk-for-go",
-      "mainRepository": "test-repo-billy/azure-sdk-for-go"
+      "integrationBranchPrefix": "sdkAutomationPPE",
+      "generationRepository": "test-repo-tih/azure-sdk-for-go",
+      "integrationRepository": "test-repo-tih/azure-sdk-for-go",
+      "mainRepository": "test-repo-arcturus/azure-sdk-for-go"
     },
     "azure-sdk-for-java": {
       "generationRepository": "test-repo-billy/azure-sdk-for-java",
