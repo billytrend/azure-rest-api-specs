@@ -5,7 +5,9 @@
 This is the AutoRest configuration file for AzureBridge Admin.
 
 ---
+
 ## Getting Started
+
 To build the SDK for AzureBridge Admin, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -13,20 +15,34 @@ To build the SDK for AzureBridge Admin, simply [Install AutoRest](https://aka.ms
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
 ### Basic Information
+
 These are the global settings for the AzureBridge API.
 
 ``` yaml
 title: AzureBridgeAdminClient
 description: AzureBridge Admin Client
 openapi-type: arm
-tag: package-2015-06-01-preview
+tag: package-2016-01
 ```
 
+
+### Tag: package-2016-01
+
+These settings apply only when `--tag=package-2016-01` is specified on the command line.
+
+```yaml $(tag) == 'package-2016-01'
+input-file:
+  - Microsoft.AzureBridge.Admin/stable/2016-01-01/Activation.json
+  - Microsoft.AzureBridge.Admin/stable/2016-01-01/AzureBridge.json
+  - Microsoft.AzureBridge.Admin/stable/2016-01-01/DownloadedProduct.json
+  - Microsoft.AzureBridge.Admin/stable/2016-01-01/Product.json
+```
 ### Tag: package-2015-06-01-preview
 
 These settings apply only when `--tag=package-2015-06-01-preview` is specified on the command line.
@@ -40,6 +56,7 @@ input-file:
 ```
 
 ---
+
 # Code Generation
 
 ## C#
@@ -54,7 +71,7 @@ csharp:
   clear-output-folder: true
 ```
 
-## Multi-API/Profile support for AutoRest v3 generators 
+## Multi-API/Profile support for AutoRest v3 generators
 
 AutoRest V3 generators require the use of `--tag=all-api-versions` to select api files.
 
@@ -73,11 +90,10 @@ input-file:
 
 ```
 
-If there are files that should not be in the `all-api-versions` set, 
+If there are files that should not be in the `all-api-versions` set,
 uncomment the  `exclude-file` section below and add the file paths.
 
 ``` yaml $(tag) == 'all-api-versions'
 #exclude-file: 
 #  - $(this-folder)/Microsoft.Example/stable/2010-01-01/somefile.json
 ```
-
