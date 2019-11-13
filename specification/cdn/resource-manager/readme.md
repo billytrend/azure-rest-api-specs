@@ -31,15 +31,15 @@ openapi-type: arm
 tag: package-preview-2025-01
 ```
 
-
 ### Tag: package-preview-2025-01
 
 These settings apply only when `--tag=package-preview-2025-01` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2025-01'
+``` yaml $(tag) == 'package-preview-2025-01'
 input-file:
   - Microsoft.Cdn/preview/2025-01-05/cdn.json
 ```
+
 ### Tag: package-2019-12
 
 These settings apply only when `--tag=package-2019-12` is specified on the command line.
@@ -192,4 +192,14 @@ uncomment the  `exclude-file` section below and add the file paths.
 ``` yaml $(tag) == 'all-api-versions'
 #exclude-file: 
 #  - $(this-folder)/Microsoft.Example/stable/2010-01-01/somefile.json
+```
+
+## Suppression
+
+``` yaml
+directive:
+  - suppress: PostOperationIdContainsUrlVerb
+    from: cdn.json
+    where: '$.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/getSupportedOptimizationTypes"].post.operationId'
+    reason: I want this suppressed!
 ```
